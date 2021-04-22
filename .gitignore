@@ -1,0 +1,15 @@
+**/*.pyc
+**/*.py~
+**/*.ipynb_checkpoints/
+**/__pycache__
+*.egg-info
+*.edgg-info
+**/x86_64/**
+.vscode/
+.cache/
+build/
+dist/
+**/*~
+*$py.class
+/.eggs
+*.DS_Store

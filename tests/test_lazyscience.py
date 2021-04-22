@@ -2,6 +2,7 @@
 #import pytest
 import lazyscience as lz
 import numpy as np
+import os
 
 def test_save():
     a = 3
@@ -13,4 +14,8 @@ def test_save():
     assert(out['a'] == 3)
     assert((out['b'] == [3, 5]).all())
     assert(out['c'] == 7)
+    
+    # delete a.h5
+    os.remove('a.h5')
+
     
