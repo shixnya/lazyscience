@@ -17,7 +17,6 @@ def test_save():
     
     # delete a.h5
     os.remove('a.h5')
-
     
     
 
