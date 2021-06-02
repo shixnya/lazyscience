@@ -25,7 +25,7 @@ def spike_mle_nbinom(counts, estimator, inits, limits=None, do_minos=False):
         return nbinom.pmf(counts, binom_n, binom_n / (estimator(*est_args) + binom_n))
 
     cost_func = iminuit.cost.UnbinnedNLL(counts, nbinom_pmf)
-    # From here, I make a fake Namespace for this function.
+    # Let's make a fake Namespace for this function.
     fake_func_code = iminuit.util.make_func_code(("binom_n",) + varnames)
     cost_func._func_code = fake_func_code
 
