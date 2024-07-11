@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="lazyscience", # Replace with your own username
-    version="0.0.1",
+    name="lazyscience",  # Replace with your own username
+    version="0.0.2",
     author="Shinya Ito",
     author_email="shixnya@gmail.com",
     description="A bunch wrappers for lazy scientists",
@@ -23,4 +23,5 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
+    install_requires=["numpy", "scipy", "h5py", "iminuit"],
 )

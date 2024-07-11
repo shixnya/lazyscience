@@ -5,7 +5,8 @@ import sys
 from iminuit.pdg_format import pdg_format
 import iminuit
 import iminuit.cost
-from numba import jit, njit
+
+# from numba import jit, njit
 
 
 def spike_mle_nbinom(counts, estimator, inits, limits=None, do_minos=False):
@@ -185,4 +186,3 @@ def cond_prob(truth_table1, truth_table2):
             p2g1e * 100,
         )
     )
-
