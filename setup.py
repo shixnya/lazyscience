@@ -16,8 +16,9 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/shixnya/lazyscience/issues",
     },
     classifiers=[
+        "Development Status :: 3 - Alpha",
         "Programming Language :: Python :: 3",
-        'License :: BSD 3-Clause "New" or "Revised" Licence',
+        "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
